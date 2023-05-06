@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="votador">
+    <button>
+      <img src="../../../assets/images/icon-plus.svg" class="trigger pointer" />
+    </button>
+    <p class="cantidad">{{ comentario.score }}</p>
+    <button>
+      <img
+        src="../../../assets/images/icon-minus.svg"
+        class="trigger pointer"
+      />
+    </button>
+  </div>
+  <div class="comentario">
+    <img
+      class="foto_perfil"
+      src="../../../assets{{ comentario.user.image.webp.slice(1) }}"
+    />
+    <p class="nick pointer">
+      {{ comentario.user.username
+      }}<span *ngIf="comentario.user.username == currentUser" class="you"
+        >You</span
+      >
+    </p>
+    <p class="date">{{ comentario.createdAt }}</p>
+    <button
+      class="reply pointer"
+      *ngIf="comentario.user.username != currentUser"
+    >
+      <img
+        src="../../../assets/images/icon-reply.svg"
+        class="reply_icon"
+      />Reply
+    </button>
+    <button
+      class="delete pointer"
+      *ngIf="comentario.user.username == currentUser"
+    >
+      <img src="../../../assets/images/icon-delete.svg" class="icon" />Delete
+    </button>
+    <button
+      class="edit pointer"
+      *ngIf="comentario.user.username == currentUser"
+    >
+      <img src="../../../assets/images/icon-edit.svg" class="icon" />Edit
+    </button>
+    <p class="comment">{{ comentario.content }}</p>
+  </div>
+</div>

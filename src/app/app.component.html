@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="comments">
+    <ul>
+      <li *ngFor="let comentario of data">
+        <app-comment [comentario]="comentario"></app-comment>
+        <ul *ngIf="comentario">
+          <li *ngFor="let replica of comentario.replies">
+            <app-comment [comentario]="replica"></app-comment>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="add-comments">
+    <img
+      class="foto_perfil"
+      src="../assets{{ perfil.image.webp.slice(1) }}"
+      alt="foto_perfil"
+    />
+    <textarea
+      placeholder="Add a comment..."
+      [(ngModel)]="new_comment"
+    ></textarea>
+    <button class="SEND" (click)="add_comment()">SEND</button>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 12fr;
+  background-color: white;
+
+  width: auto;
+  border-radius: 10px;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  gap: 10px;
+}
+
+.votador {
+  display: grid;
+  grid-template-rows: 1rem 3rem 1rem;
+  background-color: hsl(228, 33%, 97%);
+  align-self: center;
+  justify-self: center;
+  padding: 12px;
+  border-radius: 10px;
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+  justify-items: center;
+  align-items: center;
+}
+
+.comentario {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 8fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.reply_icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 5px;
+}
+.nick {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: hsl(212, 24%, 26%);
+  font-weight: 700;
+}
+
+.date {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  justify-items: flex-start;
+  color: hsl(223, 19%, 80%);
+  font-weight: 400;
+}
+
+.reply {
+  grid-column-start: 12;
+  grid-column-end: 14;
+
+  padding: 0;
+  background: none;
+  border: 0;
+
+  color: hsl(238, 40%, 52%);
+  font-weight: 800;
+}
+
+.comment {
+  grid-column-start: 1;
+  grid-column-end: 14;
+  margin: 0;
+  color: hsl(223, 19%, 80%);
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.you {
+  background-color: hsl(238, 40%, 52%);
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  padding: 3px 5px;
+  outline: none;
+  margin-left: 5px;
+}
+.delete {
+  color: red;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  font-weight: 800;
+}
+
+.edit {
+  grid-column-start: 13;
+  grid-column-end: 15;
+  color: hsl(238, 40%, 52%);
+  font-weight: 800;
+}
+
+.trigger {
+  z-index: 1;
+  padding: 1em;
+  margin: -1em;
+}

@@ -1,0 +1,93 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 12fr;
+    background-color: white;
+
+    width: auto;
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    gap: 10px;
+}
+
+.votador{
+    display: grid;
+    grid-template-rows: 1rem 3rem 1rem ;
+    background-color:hsl(228, 33%, 97%) ;
+    align-self: center;
+    justify-self: center;
+    padding: 12px;
+    border-radius: 10px;
+    color: hsl(238, 40%, 52%);
+    font-weight: 700;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.comentario{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 5px;
+}
+.foto_perfil{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.delete{
+    color: red;
+    grid-column-start: 10;
+    grid-column-end: 13;
+    font-weight: 800;
+}
+
+.edit{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    color:hsl(238, 40%, 52%) ;
+    font-weight: 800;
+
+}
+
+.nick{
+    color:hsl(212, 24%, 26%);
+    font-weight: 700;
+}
+.you{
+    background-color:hsl(238, 40%, 52%);
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    padding: 3px 5px;
+    outline: none;
+}
+.date{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    justify-items: flex-start;
+    color:hsl(223, 19%, 80%);
+    font-weight: 400;
+}
+
+.comment{
+    grid-column-start: 1;
+    grid-column-end: 14;
+    margin: 0;
+    color:hsl(223, 19%, 80%) ;
+}
+
+button{
+    outline: none;
+    background:none;
+    border: none;
+}

@@ -1,0 +1,28 @@
+html{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color:hsl(228, 33%, 97%) ;
+  }
+.foto_perfil{
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 10px;
+  align-self: baseline;
+}
+
+ul , ul{
+    padding-left: 73px;
+}
+
+.pointer:hover{
+  cursor: pointer;
+}
